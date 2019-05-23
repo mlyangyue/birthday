@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+.warp { width:640px; margin:0 auto; padding-bottom:1px;}
+.appWarp { min-height:1008px;}
+.imgLine { display:block; margin:0;}
+.imgLine img { display:block; border:0;}
+/*项目介绍*/
+.prot1021 {}
+.prot1021 h1 { margin:30px 20px; font-size:28px; background:url(../images/simulation/ico_bule.png) no-repeat 0 8px; line-height:30px; padding-left:20px; color:#445c95;}
+.protStion { width:600px; margin:0 auto 50px; border:1px solid #f2922f;}
+.protStion h2 { width:160px; background:#FFF; height:30px; line-height:30px; margin:-15px auto 0; text-align:center; color:#f38713;}
+.info { overflow:hidden; padding:30px 0 35px; width:555px; margin:0 auto;}
+.info li { float:left; font-size:28px; line-height:30px;}
+.info li.first { width:170px; }
+.info li.mid { width:210px; border:1px solid #f2922f; border-width:0 1px; text-align:center;}
+.info li.last { text-align:center; float:right;}
+.info li span { font-size:18px;}
+.protBlkC{ width:470px; margin:0 auto; border-top:1px solid #f2922f;}
+.protBlkC h3 { width:110px; height:30px; background:#f2922f; border-radius:30px; margin:-15px auto 50px; font-size:20px; text-align:center; color:#FFF; line-height:30px;}
+.protLR { overflow:hidden;}
+.protLR li.first { float:left;}
+.protLR li.last { float:right;}
+.protDY { overflow:hidden; width:145px; margin:0 auto; padding-bottom:20px;}
+
+/*产品协议*/
+.arteWarp { margin:0 10px; padding-bottom:30px;}
+.arteWarp h2 { font-size:36px; text-align:center; padding:20px 0; font-weight:bold;}
+.arteBlk { margin-bottom:30px;}
+.arteWarp h3 { font-weight:bold; margin-bottom:5px;}
+.line { overflow:hidden; padding:20px 0;}
+.line span { float:right; display:block;}
+
+.table tr td{ padding:5px;}
+
+
+/*双十一*/
+
+/*下载*/
+
+.logo { background:url(../images/logoFM.png) no-repeat 0 0; width:271px; height:103px; margin-bottom:60px;}
+.downLoadC { background:url(../images/downloadP.png) no-repeat 0 0; width:640px; height:570px; margin-bottom:50px;}
+.downLoadBut { width:340px; height:75px; line-height:75px; font-size:30px; margin:0 auto; display:block; text-align:center; background:#f2653c; color:#FFF; text-decoration:none; border-radius:5px;}
+
+
+/*弹窗*/
+/*popUp*/
+.popUp { background-color:rgba(0,0,0,0.8); width:100%; position:absolute; top:0; left:0; display:none; z-index:999999; }
+.popUpCnt { position:absolute;}
+.popUpCntTx { width:320px; height:60px; line-height:60px; text-align:center; font-size:36px; background:#FFF; border:3px solid #f06945; border-radius:5px;}
+
+/*show*/
+.popUpCntShow { width:640px; overflow:hidden; height:905px;}

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=640,user-scalable=no, minimum-scale=0.5,target-densitydpi=320" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection"content="telephone=no" />
+
+	<link rel="stylesheet" href="stylesheets/stock-match.css">
+	<script src="javascripts/jquery-2.1.4.min.js"></script>
+	<script src="javascripts/jquery.mobile-1.4.5.min.js"></script>
+	<title>赛季！风气云涌第一期</title>
+</head>
+
+<body>
+<div data-role="page">
+    <header data-role="header" class="header">
+        <div class="banner"><img src="stylesheets/images/stock/stock.jpg" width="640" height="236"></div>
+    </header>
+    <!-- /header -->
+
+    <main data-role="ui-content" id="match-main">
+        <section class="matchInfo">
+            <h2 class="matchTitle">赛季！风气云涌第一期</h2>
+        	<ul>
+            	<li class="bL">
+                	<span class="prize">￥5000</span>
+					冠军奖励
+                </li>
+            	<li class="bM">
+                	<span class="count">63467</span>
+					参赛人数
+                </li>
+            	<li class="bR">
+                	<span class="Bming">报名中</span>
+                </li>
+            </ul>
+        </section>
+        <article class="applyArt">
+            <hr class="applyLine">
+        	<section class="applyDate">
+                报名时间:2015-10-13至2015-11-11<br>
+                比赛时间:2015-10-13至2015-11-11<br>
+            </section>
+            <p>
+                赛程规则:<br>
+                1.说的九分貌似为卡萨丁说的九分貌似为卡萨丁<br>
+                2.交易时间说的九分貌似为卡萨丁<br>
+                3.说的九分貌似为卡萨丁
+            </p>
+        </article>
+    </main>
+    <!-- /main -->
+
+    <footer id="apply-footer" class="footer">
+        <a href="javascript:void(0);" class="apply_button unClick">立即报名</a><!--禁止报名添加央视unClick-->
+    </footer>
+    <!-- /footer -->
+
+</div>
+<!-- /page -->
+<!--报名提醒-->
+<div class="popUp popUp_Remind">
+	<div class="popUpCnt popUpCntRemind">
+    	<div class="remind">
+        	<div class="text" style="padding-top:70px;">本次报名需使用<span class="org">10金币</span></div>
+        	<div class="text">您的金币余额：<span class="org">8金币</span></div>
+        </div>
+        <div class="remindBut">
+            <a href="javascript:void(0);" class="ccelBut">取消</a>
+            <a href="javascript:void(0);" class="sureBut">确定</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".apply_button").click(function(){
+		popUp(".popUp_Remind",335)
+	});
+});
+//popUP
+function popUp(tag,cntH,txText){
+	var scrollTop=$(document).scrollTop()
+	var pageH = $(document).height();
+	var mobH=$(window).height();
+	var mobW=$(window).width();
+	var tagW = $(tag).children(".popUpCnt").width();
+	console.log(tagW)
+	var tagH = cntH;//$(tag).children(".popUpCnt").height()
+	var popLeft = (mobW-tagW)/2;
+	if(mobH<tagH){
+		var popTop=scrollTop;
+	}else{
+		var popTop =(mobH-tagH)/2+scrollTop;
+	}
+	$(tag).height(pageH);
+	$(tag).children(".popUpCnt").html(txText).css({"top":popTop,"left":popLeft})
+	$(tag).show();
+	$(tag).children(".popUpCnt").addClass("animated zoomIn")
+	//alert("屏幕高度是"+mobH+"标签高度是"+tagW+"滚动条高度"+scrollTop)
+	//alert(popTop);
+}
+
+</script>

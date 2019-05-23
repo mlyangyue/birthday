@@ -1,0 +1,70 @@
+@import "reset.css";
+@import "jquery.mobile-1.4.5.min.css";
+
+h2 { font-size:30px; line-height:35px;}
+.org{ color:#ff7000;}
+.header { margin-bottom:15px;}
+.footer { position:absolute; bottom:0; width:100%;}
+.matchTitle { background:url(images/stock/ico_jb.png) no-repeat 0 3px; padding:0 0 0 50px; margin-bottom:25px;}
+.matchInfo { overflow:hidden; margin-left:30px; padding-bottom:20px;}
+.matchInfo ul li { float:left; font-size:24px;}
+.matchInfo ul li span { display:block; font-size:30px; line-height:40px;}
+.bL { width:170px;}
+.bM { width:235px; text-align:center;}
+.matchInfo ul li.bR { float:right; margin-right:20px; padding-right:20px;}
+.prize { color:#f75700; margin-left:-5px;}
+.matchInfo ul li span.Bming { color:#e03131; line-height:70px;}
+.applyArt { margin:0 0 0 30px; color:#666; line-height:35px;}
+.applyDate { line-height:40px; margin-bottom:5px;}
+.applyLine { margin:30px 0 20px;}
+.footer { background:#efefef; padding:20px 0;}
+.footer .apply_button { background:#e03131; display:block; color:#FFF; height:90px; line-height:90px; font-size:32px; text-align:center; border-radius:20px; padding:0; margin:0 30px; border:0; font-weight:normal; text-decoration:none;}
+.footer .unClick { background:#ec8383;}
+
+.matchMine { background:#efefef; padding:20px 0;}
+.bgF { background:#FFF; height:90px; line-height:90px; padding:0 30px; color:#333; font-size:30px;}
+.myRanking { float:right;}
+.myProfit { float:left;}
+.clrRed{ color:#e03131;}
+.state { text-align:center;}
+.stateOngoing { color:#077ece;}
+
+.rankList ul li { padding:20px 20px 20px 0; margin-left:20px; border-bottom:1px solid #D7D7D7; line-height:73px; padding-left:65px; position:relative;}
+.rankList ul li em { display:block; width:44px; height:50px; font-style:normal; position:absolute; top:30px; left:0; text-align:center; line-height:50px; font-size:24px; color:#647e9e;}
+.rankList ul li.syNum01 em { background:url(images/stock/phb01.png) no-repeat 0 0px; float:left; text-indent:-99999px;}
+.rankList ul li.syNum02 em { background:url(images/stock/phb02.png) no-repeat 0 0px; float:left; text-indent:-99999px;}
+.rankList ul li.syNum03 em { background:url(images/stock/phb03.png) no-repeat 0 0px; float:left; text-indent:-99999px;}
+.rankList ul li .htgCListTop { overflow:hidden;}
+.phbName { padding:20px 0 0 0; display:block; overflow:hidden;}
+.rankList .htgCListTop dd span.pLnum { background:url(images/stock/phR.png) no-repeat right 2px; padding-right:30px; font-size:30px; color:#e03131;}
+.rankList .htgCListTop dd span.userS { color:#343434;}
+
+.htgCList { padding:20px 20px 20px 0; margin-left:20px; border-bottom:1px solid #D7D7D7;}
+.htgCList dl { overflow:hidden;}
+.htgCListTop { margin-bottom:10px;}
+.htgCListTop dt { float:left; width:15%; height:73px;}
+.htgCListTop dt img { width:73px; height:73px; border-radius:50%;}
+.htgCListTop dd { float:left; width:85%;}
+.htgCListTop dd span { display:block; height:30px; line-height:30px;}
+.htgCListTop dd span.userS { float:left; padding-right:40px; color:#077ece; font-size:28px;}
+.htgCListTop dd span.s1 {background:url(images/stock/s1.png) no-repeat right 4px;}
+.htgCListTop dd span.s2 { background:url(images/stock/s2.png) no-repeat right 4px;}
+.htgCListTop dd span.pLnum { float:right; background:url(images/stock/p.png) no-repeat right -5px; padding-right:50px; color:#999; font-size:20px; margin-top:-15px; height:auto; text-align:center;}
+.htgCListTop dd span.update { color:#999; font-size:20px; clear:both; padding-top:13px;}
+.htgCListTop dd span.pLnum span { font-size:22px; color:#666666;}
+.addmore { width:100%; text-align:center; line-height:30px; font-size:20px; color:#666; display:none;}
+
+
+
+
+/*popUp 公用*/
+.popUp { background-color:rgba(0,0,0,0.5); width:100%; position:absolute; top:0; left:0; display:none; z-index:999999; }
+.popUpCnt { position:absolute; z-index:9999999;}
+
+/*提醒框*/
+.popUpCntRemind { background:#FFF; border-radius:10px; width:495px; height:335px;}
+.remind { height:230px; text-align:center; line-height:50px; font-size:32px;}
+.remindBut { padding:20px 35px; border-top:1px solid #e1e1e1; overflow:hidden;}
+.remindBut a { width:190px; height:58px; border:2px solid #d5d5d5; display:block; border-radius:10px; text-align:center; line-height:58px; text-decoration:none;}
+.ccelBut { float:left;}
+.sureBut,.goBut { float:right; color:#e03131;}

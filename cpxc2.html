@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" id="viewport" content="width=640,user-scalable=no,target-densitydpi=320">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection"content="telephone=no, email=no" />
+<title>7年熊市换牛道 牛到超乎想象</title>
+<link rel="stylesheet" href="appH5/css/reset.css">
+<link rel="stylesheet" href="appH5/css/swiper.css">
+<link rel="stylesheet" href="appH5/css/animate.min.css">
+<script src="appH5/js/jquery.min.js" type="text/ecmascript"></script>
+<script src="appH5/js/swiper.js" type="text/ecmascript"></script>
+<style type="text/css">
+body { background:#1b1b37;}
+img { display:block; border:0;}
+.swiper-container{width: 640px;height:1008px; overflow:hidden;}
+.swiper-slide { position:relative; width:640px; height:1008px;}
+.block,.pGo,.logo { position:absolute;}
+/*.pGo { background:url(bg/nrbd/icoHome.png) no-repeat 0 0 ; width:640px; height:94px; left:0px; bottom:0px; border:0;}*/
+@keyframes swipeMove {
+0% {opacity: 0;transform: translate3d(0px, 8px, 0px);}
+70% {opacity: 1;transform: translate3d(0px, 0px, 0px);}
+100% {opacity: 0;transform: translate3d(0px, -5px, 0px);}
+}
+.swipeMove {animation: 1s ease-in 0s normal none infinite running swipeMove;}
+
+.page01 { background:url(bg/backg/first.jpeg) no-repeat 0 0;background-size:cover;}
+.page02 { background:url(bg/backg/first.jpeg) no-repeat 0 0;}
+.page03 { background:url(bg/backg/first.jpeg) no-repeat 0 0;}
+.page04 { background:url(bg/backg/first.jpeg) no-repeat 0 0;}
+.page05 { background:url(bg/backg/first.jpeg) no-repeat 0 0;}
+.page06 { background:url(bg/backg/first.jpeg) no-repeat 0 0;}
+.page07 { background:url(bg/backg/first.jpeg) no-repeat 0 0;}
+
+/*P1*/
+.logo { top:0;}
+.p101 { top:180px; left:0; width:320px; height:41px;}
+.p102 { top:180px; right:0; width:320px; height:41px;}
+.p103 { top:221px; left:0; width:640px; height:41px;}
+.p104 { top:265px; left:145px; width:112px; height:41px;}
+.p105 { top:265px; left:257px; width:111px; height:41px;}
+.p106 { top:265px; left:368px; width:112px; height:41px;}
+.p107 { top:665px; width:640px;}
+.p108 { width:640px; top:491px; height:1px; overflow:hidden;}
+.p109 { top:415px; width:640px;}
+.p110 { top:730px; left:0; width:320px; height:55px;}
+.p111 { top:730px; right:0; width:320px; height:55px;}
+.p112 { top:795px; width:640px; height:75px;}
+
+/*P2*/
+.p201 { top:170px; width:640px; height:111px;}
+.p202 { top:300px; width:640px; height:56px;}
+.p203 { top:360px; width:202px; height:42px;}
+.p204 { top:360px; left:202px; width:438px; height:42px;}
+.p205 { top:402px; width:230px; height:48px;}
+.p206 { top:402px; left:230px; width:410px; height:48px;}
+.p207 { top:450px; width:271px; height:49px;}
+.p208 { top:450px; left:271px; width:369px; height:49px;}
+.p209 { top:585px; width:640px; height:84px;}
+.p210 { bottom:0px; width:640px; height:518px;}
+
+/*P3*/
+.p301 { width:640px; height:104px; top:190px;}
+.p302 { width:640px; height:341px; top:315px; z-index:99;}
+.p303 { width:72px; height:57px; top:300px; left:245px; z-index:9;}
+.p304 { width:177px; height:164px; top:590px; left:355px; z-index:9; overflow:hidden; height:1px;}
+.p305 { width:640px; height:121px; top:710px;}
+
+/*P4*/
+.p401 { width:640px; height:53px; top:165px;}
+.p402 { width:640px; height:53px; top:218px;}
+.p403 { width:640px; height:53px; top:271px;}
+.p404 { width:640px; height:53px; top:324px;}
+.p405 { width:640px; height:271px; top:411px; z-index:99;}
+.p406 { height:315px; top:355px; width:1px; overflow:hidden;}
+.p407 { width:342px; height:229px; top:680px; left:0;}
+.p408 { width:120px; height:120px; top:730px; left:420px; z-index:99;}
+.p409 { width:41px; height:56px; top:690px; left:430px;}
+
+/*P5*/
+.p501 { width:640px; height:119px; top:140px; z-index:99;}
+.p502 { width:640px; height:198px; top:275px; z-index:99;}
+.p503 { width:640px; height:229px; top:390px; z-index:99;}
+.p504 { width:640px; height:223px; top:530px; z-index:99;}
+.p505 { width:640px; height:175px; top:690px; z-index:99;}
+.p506 { width:72px; height:72px; top:295px; left:430px;}
+.p507 { width:640px; height:1px; top:315px; overflow:hidden}
+
+/*P6*/
+.p601 { width:640px; height:47px; top:135px;}
+.p602 { width:640px; height:47px; top:182px;}
+.p603 { width:640px; height:460px; top:240px;}
+.p604 { width:640px; height:292px; bottom:100px; height:1px; overflow:hidden;}
+
+/*P7*/
+.p701 { width:640px; height:454px; top:140px;}
+.p702 { width:320px; height:69px; top:553px;}
+.p703 { width:320px; height:69px; top:553px; right:0;}
+.p704 { width:640px; height:35px; top:520px;}
+.p705 { width:640px; height:64px; top:455px;}
+.p706 { width:640px; height:36px; top:420px;}
+.p707 { width:640px; height:64px; top:355px;}
+.p708 { width:640px; height:39px; top:655px;}
+.p709 { width:640px; height:118px; top:745px;}
+
+/**/
+.block { display:none;}
+.animated { display:block;}
+.dShow { background:none;}
+.pGo { width:33px; height:81px; bottom:0; left:304px; cursor:pointer;}
+
+@keyframes rotating {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+@keyframes rotating {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+.music { position:fixed; top:120px; right:40px; background:url(bg/music.gif) no-repeat center center; background-size:70px 70px; width:60px; height:60px; z-index:9999; cursor:pointer;}
+.rotate { background:url(bg/music_off.png) no-repeat 0 0; position:absolute; top:10px; left:10px; width:40px; height:40px; background-size:100% 100%;animation: 1.2s linear 0s normal none infinite running rotating;}
+.musicOff { background:url(bg/music_off.png) no-repeat 0 0; position:absolute; top:10px; left:10px; width:40px; height:40px; background-size:100% 100%; }
+.musicKG { background:none;}
+</style>
+</head>
+
+<body>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide page01">
+            <div class="logo p1"><img src="bg/cp2/cpLogo.png" width="640" height="104" alt=""></div>
+            <div class="block p1 p101"><img src="bg/cp2/cp101.png" width="320" height="41" alt=""></div>
+            <div class="block p1 p102"><img src="bg/cp2/cp102.png" width="320" height="41" alt=""></div>
+            <div class="block p1 p103"><img src="bg/cp2/cp103.png" width="640" height="41" alt=""></div>
+            <div class="block p1 p104"><img src="bg/cp2/cp104.png" width="112" height="41" alt=""></div>
+            <div class="block p1 p105"><img src="bg/cp2/cp105.png" width="111" height="41" alt=""></div>
+            <div class="block p1 p106"><img src="bg/cp2/cp106.png" width="112" height="41" alt=""></div>
+            <div class="block p1 p107"><img src="bg/cp2/cp107.png" width="640" height="49" alt=""></div>
+            <div class="block p1 p108"><img src="bg/cp2/cp108.png" width="640" height="223" alt=""></div>
+            <div class="block p1 p109"><img src="bg/cp2/cp109.png" width="640" height="179" alt=""></div>
+            <div class="block p1 p110"><img src="bg/cp2/cp110.png" width="320" height="55" alt=""></div>
+            <div class="block p1 p111"><img src="bg/cp2/cp111.png" width="320" height="55" alt=""></div>
+            <div class="block p1 p112"><img src="bg/cp2/cp112.png" width="640" height="75" alt=""></div>
+            <div class="pGo swipeMove"><img src="bg/cp2/goPage.png" width="33" height="81" alt=""></div>
+        </div>
+        <!--end swiper-slide -->
+        <div class="swiper-slide page02">
+            <div class="logo p2"><img src="bg/cp2/cpLogo.png" width="640" height="104" alt=""></div>
+            <div class="block p2 p201"><img src="bg/cp2/cp201.png" width="640" height="111" alt=""></div>
+            <div class="block p2 p202"><img src="bg/cp2/cp202.png" width="640" height="56" alt=""></div>
+            <div class="block p2 p203"><img src="bg/cp2/cp203.png" width="202" height="42" alt=""></div>
+            <div class="block p2 p204"><img src="bg/cp2/cp204.png" width="438" height="42" alt=""></div>
+            <div class="block p2 p205"><img src="bg/cp2/cp205.png" width="230" height="48" alt=""></div>
+            <div class="block p2 p206"><img src="bg/cp2/cp206.png" width="410" height="48" alt=""></div>
+            <div class="block p2 p207"><img src="bg/cp2/cp207.png" width="271" height="49" alt=""></div>
+            <div class="block p2 p208"><img src="bg/cp2/cp208.png" width="369" height="49" alt=""></div>
+            <div class="block p2 p209"><img src="bg/cp2/cp209.png" width="640" height="84" alt=""></div>
+            <div class="block p2 p210"><img src="bg/cp2/cp210.png" width="640" height="518" alt=""></div>
+            <div class="pGo swipeMove"><img src="bg/cp2/goPage.png" width="33" height="81" alt=""></div>
+        </div>
+        <!--end swiper-slide -->
+        <div class="swiper-slide page03">
+        	<div class="logo p3"><img src="bg/cp2/cpLogo.png" width="640" height="104" alt=""></div>
+        	<div class="block p3 p301"><img src="bg/cp2/cp301.png" width="640" height="104" alt=""></div>
+        	<div class="block p3 p302"><img src="bg/cp2/cp302.png" width="640" height="341" alt=""></div>
+        	<div class="block p3 p303"><img src="bg/cp2/cp303.png" width="72" height="57" alt=""></div>
+        	<div class="block p3 p304"><img src="bg/cp2/cp304.png" width="177" height="164" alt=""></div>
+        	<div class="block p3 p305"><img src="bg/cp2/cp305.png" width="640" height="121" alt=""></div>
+            <div class="pGo swipeMove"><img src="bg/cp2/goPage.png" width="33" height="81" alt=""></div>
+        </div>
+        <!--end swiper-slide -->
+        <div class="swiper-slide page04">
+            <div class="logo p4"><img src="bg/cp2/cpLogo.png" width="640" height="104" alt=""></div>
+            <div class="block p4 p401"><img src="bg/cp2/cp401.png" width="640" height="53" alt=""></div>
+            <div class="block p4 p402"><img src="bg/cp2/cp402.png" width="640" height="53" alt=""></div>
+            <div class="block p4 p403"><img src="bg/cp2/cp403.png" width="640" height="53" alt=""></div>
+            <div class="block p4 p404"><img src="bg/cp2/cp404.png" width="640" height="53" alt=""></div>
+            <div class="block p4 p405"><img src="bg/cp2/cp405.png" width="640" height="271" alt=""></div>
+            <div class="block p4 p406"><img src="bg/cp2/cp406.png" width="640" height="315" alt=""></div>
+            <div class="block p4 p407"><img src="bg/cp2/cp407.png" width="342" height="229" alt=""></div>
+            <div class="block p4 p408"><img src="bg/cp2/cp408.png" width="120" height="120" alt=""></div>
+            <div class="block p4 p409"><img src="bg/cp2/cp409.png" width="41" height="56" alt=""></div>
+            <div class="pGo swipeMove"><img src="bg/cp2/goPage.png" width="33" height="81" alt=""></div>
+        </div>
+        <!--end swiper-slide -->
+        <div class="swiper-slide page05">
+        	<div class="logo p5"><img src="bg/cp2/cpLogo.png" width="640" height="104" alt=""></div>
+            <div class="block p5 p501"><img src="bg/cp2/cp501.png" width="640" height="119" alt=""></div>
+            <div class="block p5 p502"><img src="bg/cp2/cp502.png" width="640" height="198" alt=""></div>
+            <div class="block p5 p503"><img src="bg/cp2/cp503.png" width="640" height="229" alt=""></div>
+            <div class="block p5 p504"><img src="bg/cp2/cp504.png" width="640" height="223" alt=""></div>
+            <div class="block p5 p505"><img src="bg/cp2/cp505.png" width="640" height="175" alt=""></div>
+            <div class="block p5 p506"><img src="bg/cp2/cp506.png" width="72" height="72" alt=""></div>
+            <div class="block p5 p507"><img src="bg/cp2/cp507.png" width="640" height="537" alt=""></div>
+            <div class="pGo swipeMove"><img src="bg/cp2/goPage.png" width="33" height="81" alt=""></div>
+        </div>
+        <!--end swiper-slide -->
+        <div class="swiper-slide page06">
+            <div class="logo p6"><img src="bg/cp2/cpLogo.png" width="640" height="104" alt=""></div>
+            <div class="block p6 p601"><img src="bg/cp2/cp601.png" width="640" height="47" alt=""></div>
+            <div class="block p6 p602"><img src="bg/cp2/cp602.png" width="640" height="47" alt=""></div>
+            <div class="block p6 p603"><img src="bg/cp2/cp603.png" width="640" height="460" alt=""></div>
+            <div class="block p6 p604"><img src="bg/cp2/cp604.png" width="640" height="292" alt=""></div>
+            <div class="pGo swipeMove"><img src="bg/cp2/goPage.png" width="33" height="81" alt=""></div>
+        </div>
+        <!--end swiper-slide -->
+        <div class="swiper-slide page07">
+            <div class="logo p7"><img src="bg/cp2/cpLogo.png" width="640" height="104" alt=""></div>
+            <div class="block p7 p701"><img src="bg/cp2/cp701.png" width="640" height="454" alt=""></div>
+            <div class="block p7 p702"><img src="bg/cp2/cp702.png" width="320" height="69" alt=""></div>
+            <div class="block p7 p703"><img src="bg/cp2/cp703.png" width="320" height="69" alt=""></div>
+            <div class="block p7 p704"><img src="bg/cp2/cp704.png" width="640" height="35" alt=""></div>
+            <div class="block p7 p705"><img src="bg/cp2/cp705.png" width="640" height="64" alt=""></div>
+            <div class="block p7 p706"><img src="bg/cp2/cp706.png" width="640" height="36" alt=""></div>
+            <div class="block p7 p707"><img src="bg/cp2/cp707.png" width="640" height="64" alt=""></div>
+            <div class="block p7 p708"><img src="bg/cp2/cp708.png" width="640" height="39" alt=""></div>
+            <div class="block p7 p709"><a href="http://www.haotougu.com/site/acYyb"><img src="bg/cp2/cp709.png" width="640" height="118" alt=""></a></div>
+            <div class="pGo swipeMove"><img src="bg/cp2/goPage.png" width="33" height="81" alt=""></div>
+        </div>
+        <!--end swiper-slide -->
+    </div>
+</div>
+<div class="music">
+	<div class="rotate musicOff"></div>
+</div>
+
+<audio preload="auto" autoplay="autoplay" id="media" src="bg/cp2/audio.mp3" loop></audio>
+</html>
+<script type="text/ecmascript">
+$(document).ready(function(e) {
+	var autoP=document.querySelector("audio");
+	autoP.play();
+	$(".music").click(function(){
+		if(autoP.paused){
+			autoP.play();
+			$(this).removeClass("musicKG").children(".musicOff").addClass("rotate");
+		}else{
+			autoP.pause();
+			$(this).addClass("musicKG").children(".musicOff").removeClass("rotate");
+		}
+	});
+	setTimeout(function(){
+		$(".p101").addClass("bounceInLeft animated");
+	},1000);
+	setTimeout(function(){
+		$(".p102").addClass("bounceInRight animated");
+	},2000);
+	setTimeout(function(){
+		$(".p103").addClass("bounceInDown animated");
+	},3000);
+	setTimeout(function(){
+		$(".p104").fadeIn(800,function(){$(".p105").fadeIn(800,function(){$(".p106").fadeIn(800)})});
+	},4000);
+	setTimeout(function(){
+		$(".p107").addClass("fadeInRightBig animated");
+	},6400);
+	setTimeout(function(){
+		$(".p108").addClass("animated").animate({height:"223px"},500);
+	},7000);
+	setTimeout(function(){
+		$(".p109").addClass("fadeInRightBig animated");
+	},7500);
+	setTimeout(function(){
+		$(".p110").addClass("bounceInLeft animated");
+		$(".p111").addClass("bounceInRight animated");
+	},8500);
+	setTimeout(function(){
+		$(".p112").fadeIn();
+	},9500);
+	//alert($(document.body).width()+"++"+$(document.body).height());
+  var mySwiper = new Swiper('.swiper-container',{
+    mode: 'vertical',
+	//loop: true,
+	onSlideChangeEnd:function(){
+		var pageNumber=mySwiper.activeIndex;
+		//alert(pageNumber);
+		switch (pageNumber){
+			case 0:
+			case 1:
+				$(".p201").addClass("bounceInLeft animated");
+				setTimeout(function(){
+					$(".p202").addClass("fadeInRightBig animated")
+				},1000);
+				setTimeout(function(){
+					$(".p203").fadeIn();
+				},2000);
+				setTimeout(function(){
+					$(".p204").addClass("bounceInRight animated")
+				},2500);
+				setTimeout(function(){
+					$(".p205").fadeIn();
+				},3500);
+				setTimeout(function(){
+					$(".p206").addClass("bounceInRight animated")
+				},4000);
+				setTimeout(function(){
+					$(".p207").fadeIn();
+				},5000);
+				setTimeout(function(){
+					$(".p208").addClass("bounceInRight animated")
+				},5500);
+				setTimeout(function(){
+					$(".p209").fadeIn();
+				},6500);
+				setTimeout(function(){
+					$(".p210").addClass("zoomInDown animated")
+				},7000);
+				break;
+			case 2:
+				$(".p302").addClass("zoomInRight animated")
+				setTimeout(function(){
+					$(".p303").addClass("fadeInUp animated")
+				},1000);
+				setTimeout(function(){
+					$(".p301").fadeIn();
+				},2000);
+				setTimeout(function(){
+					$(".p304").addClass("animated").animate({height:"164px"},1000);
+				},3000);
+				setTimeout(function(){
+					$(".p305").addClass("flash animated")
+				},4000);
+				break;
+			case 3:
+				$(".p401").fadeIn();
+				setTimeout(function(){
+					$(".p402").addClass("bounceInRight animated")
+				},500);
+				setTimeout(function(){
+					$(".p403").fadeIn()
+				},1500);
+				setTimeout(function(){
+					$(".p404").addClass("bounceInRight animated")
+				},2000);
+				setTimeout(function(){
+					$(".p405").addClass("zoomIn animated")
+				},3000);
+				setTimeout(function(){
+					$(".p408").addClass("pulse animated")
+				},4000);
+				setTimeout(function(){
+					$(".p409").addClass("fadeInUp animated")
+				},4500);
+				setTimeout(function(){
+					$(".p406").addClass("animated").animate({width:"640px"},1000)
+				},6500);
+				setTimeout(function(){
+					$(".p407").addClass("zoomInRight animated")
+				},7500);
+				break;
+			case 4:
+				$(".p501").fadeIn();
+				setTimeout(function(){
+					$(".p502").addClass("bounceInLeft animated")
+				},1000);
+				setTimeout(function(){
+					$(".p503").addClass("bounceInRight animated")
+				},2000);
+				setTimeout(function(){
+					$(".p504").addClass("bounceInLeft animated")
+				},3000);
+				setTimeout(function(){
+					$(".p505").addClass("bounceInRight animated")
+				},4000);
+				setTimeout(function(){
+					$(".p506").addClass("zoomIn animated")
+				},5000);
+				setTimeout(function(){
+					$(".p507").addClass("animated").animate({height:"537px"},1000)
+				},6000);
+				break;
+			case 5:
+				$(".p603").addClass("zoomInRight animated");
+				setTimeout(function(){
+					$(".p601").addClass("bounceInLeft animated")
+				},1000);
+				setTimeout(function(){
+					$(".p602").addClass("bounceInRight animated")
+				},2000);
+				setTimeout(function(){
+					$(".p604").addClass("animated").animate({height:"292px"},3000)
+				},3000);
+				break;
+			case 6:
+				$(".p701").addClass("animated");
+				setTimeout(function(){
+					$(".p702").addClass("fadeInLeft animated")
+					$(".p703").addClass("fadeInRight animated")
+				},1000);
+				setTimeout(function(){
+					$(".p704").addClass("fadeInUp animated")
+				},2000);
+				setTimeout(function(){
+					$(".p705").fadeIn();
+				},3000);
+				setTimeout(function(){
+					$(".p706").addClass("fadeInUp animated")
+				},4000);
+				setTimeout(function(){
+					$(".p707").addClass("zoomInDown animated")
+				},5000);
+				setTimeout(function(){
+					$(".p708").addClass("fadeInRight animated")
+				},6000);
+				setTimeout(function(){
+					$(".p709").addClass("flash animated")
+				},7000);
+				break;
+		}
+	}
+  })
+   $(".pGo").click(function(){
+			mySwiper.swipeNext();
+		});
+});
+
+</script>
