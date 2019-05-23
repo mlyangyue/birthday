@@ -38,16 +38,17 @@ img { display:block; border:0;}
 .logo { top:0;}
 .p101 { top:180px; left:0; width:320px; height:41px;}
 .p102 { top:180px; right:0; width:320px; height:41px;}
-.p103 { top:221px; left:0; width:640px; height:41px;}
-.p104 { top:265px; left:145px; width:112px; height:41px;}
-.p105 { top:265px; left:257px; width:111px; height:41px;}
-.p106 { top:265px; left:368px; width:112px; height:41px;}
-.p107 { top:665px; width:640px;}
-.p108 { width:640px; top:491px; height:1px; overflow:hidden;}
-.p109 { top:415px; width:640px;}
-.p110 { top:730px; left:0; width:320px; height:55px;}
-.p111 { top:730px; right:0; width:320px; height:55px;}
-.p112 { top:795px; width:640px; height:75px;}
+/*.p103 { top:221px; left:0; width:640px; height:41px;}*/
+/*.p104 { top:265px; left:145px; width:112px; height:41px;}*/
+/*.p105 { top:265px; left:257px; width:111px; height:41px;}*/
+.p103 { top:265px; left:368px; width:112px; height:41px;}
+.p104 { top:310px; left:40px;width:640px;}
+.p105 { top:520px; left:310px;width:640px;}
+.p106 { width:640px; left:200px;top:420px; height:1px;}
+/*.p109 { top:415px; width:640px;}*/
+/*.p110 { top:730px; left:0; width:320px; height:55px;}*/
+/*.p111 { top:730px; right:0; width:320px; height:55px;}*/
+/*.p112 { top:795px; width:640px; height:75px;}*/
 
 /*P2*/
 .p201 { top:170px; width:640px; height:111px;}
@@ -139,20 +140,8 @@ img { display:block; border:0;}
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide page01">
-            <div class="logo p1"><img src="elem/02/time.png" width="640" height="104" alt=""></div>
-            <div class="block p1 p101"><img src="elem/02/time.png" width="320" height="41" alt=""></div>
-            <div class="block p1 p102"><img src="elem/02/time.png" width="320" height="41" alt=""></div>
-            <div class="block p1 p103"><img src="elem/02/time.png" width="640" height="41" alt=""></div>
-            <div class="block p1 p104"><img src="elem/02/time.png" width="112" height="41" alt=""></div>
-            <div class="block p1 p105"><img src="elem/02/time.png" width="111" height="41" alt=""></div>
-            <div class="block p1 p106"><img src="elem/02/time.png" width="112" height="41" alt=""></div>
-            <div class="block p1 p107"><img src="elem/02/time.png" width="640" height="49" alt=""></div>
-            <div class="block p1 p108"><img src="elem/02/time.png" width="640" height="223" alt=""></div>
-            <div class="block p1 p109"><img src="elem/02/time.png" width="640" height="179" alt=""></div>
-            <div class="block p1 p110"><img src="elem/02/time.png" width="320" height="55" alt=""></div>
-            <div class="block p1 p111"><img src="elem/02/time.png" width="320" height="55" alt=""></div>
-            <div class="block p1 p112"><img src="elem/02/time.png" width="640" height="75" alt=""></div>
-            <div class="pGo swipeMove"><img src="elem/02/time.png" width="33" height="81" alt=""></div>
+            <div class="block p1 p104"><img src="elem/01/weizi.png" width="540" height="280" alt=""></div>
+            <div class="block p1 p105"><img src="elem/01/laopo.png" width="540" height="120" alt=""></div>
         </div>
         <!--end swiper-slide -->
         <div class="swiper-slide page02">
@@ -252,32 +241,19 @@ $(document).ready(function(e) {
 	});
 	setTimeout(function(){
 		$(".p101").addClass("bounceInLeft animated");
-	},1000);
+	},100);
 	setTimeout(function(){
 		$(".p102").addClass("bounceInRight animated");
-	},2000);
+	},200);
 	setTimeout(function(){
 		$(".p103").addClass("bounceInDown animated");
-	},3000);
+	},300);
 	setTimeout(function(){
 		$(".p104").fadeIn(800,function(){$(".p105").fadeIn(800,function(){$(".p106").fadeIn(800)})});
-	},4000);
+	},400);
 	setTimeout(function(){
-		$(".p107").addClass("fadeInRightBig animated");
-	},6400);
-	setTimeout(function(){
-		$(".p108").addClass("animated").animate({height:"223px"},500);
-	},7000);
-	setTimeout(function(){
-		$(".p109").addClass("fadeInRightBig animated");
-	},7500);
-	setTimeout(function(){
-		$(".p110").addClass("bounceInLeft animated");
-		$(".p111").addClass("bounceInRight animated");
-	},8500);
-	setTimeout(function(){
-		$(".p112").fadeIn();
-	},9500);
+		$(".p105").addClass("fadeInRightBig animated");
+	},500);
 	//alert($(document.body).width()+"++"+$(document.body).height());
   var mySwiper = new Swiper('.swiper-container',{
     mode: 'vertical',
