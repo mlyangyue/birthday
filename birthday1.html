@@ -36,7 +36,7 @@ img { display:block; border:0;}
 
 /*P1*/
 .logo { top:0;}
-.p101 { top:180px; left:0; width:320px; height:41px;}
+.p101 { top:300px; left:30px; width:320px; height:500px;border:1px solid #000;}
 .p102 { top:180px; right:0; width:320px; height:41px;}
 /*.p103 { top:221px; left:0; width:640px; height:41px;}*/
 /*.p104 { top:265px; left:145px; width:112px; height:41px;}*/
@@ -51,10 +51,10 @@ img { display:block; border:0;}
 /*.p112 { top:795px; width:640px; height:75px;}*/
 
 /*P2*/
-.p201 { top:500px; width:640px; height:111px;left:340px;}
-.p202 { top:560px; width:640px; height:56px;left:280px;}
-.p203 { top:680px; width:202px; height:42px;left:30px;border-radius: 50%;}
-.p204 { top:800px; left:280px; width:438px; height:42px;}
+.p201 { top:170px; width:640px; height:111px;}
+.p202 { top:300px; width:640px; height:56px;}
+.p203 { top:360px; width:202px; height:42px;}
+.p204 { top:360px; left:202px; width:438px; height:42px;}
 .p205 { top:402px; width:230px; height:48px;}
 .p206 { top:402px; left:230px; width:410px; height:48px;}
 .p207 { top:450px; width:271px; height:49px;}
@@ -63,8 +63,8 @@ img { display:block; border:0;}
 .p210 { bottom:0px; width:640px; height:518px;}
 
 /*P3*/
-.p301 { width:640px; height:480px;}
-.p302 { width:640px; height:341px; top:500px;left:280px;}
+.p301 { width:640px; height:104px; top:190px;}
+.p302 { width:640px; height:341px; top:315px; z-index:99;}
 .p303 { width:72px; height:57px; top:300px; left:245px; z-index:9;}
 .p304 { width:177px; height:164px; top:590px; left:355px; z-index:9; overflow:hidden; height:1px;}
 .p305 { width:640px; height:121px; top:710px;}
@@ -110,7 +110,7 @@ img { display:block; border:0;}
 .block { display:none;}
 .animated { display:block;}
 .dShow { background:none;}
-.pGo { width:33px; height:81px; bottom:20px; left:304px; cursor:pointer;}
+.pGo { width:33px; height:81px; bottom:0; left:304px; cursor:pointer;}
 
 @keyframes rotating {
 0% {
@@ -128,9 +128,9 @@ img { display:block; border:0;}
     transform: rotate(360deg);
 }
 }
-.music { position:fixed; top:120px; right:40px; background:url(elem/01/o.png) no-repeat center center; background-size:70px 70px; width:60px; height:60px; z-index:9999; cursor:pointer;}
-.rotate { background:url(elem/01/o.png) no-repeat 0 0; position:absolute; top:10px; left:10px; width:40px; height:40px; background-size:100% 100%;animation: 1.2s linear 0s normal none infinite running rotating;}
-.musicOff { background:url(elem/01/o.png) no-repeat 0 0; position:absolute; top:10px; left:10px; width:40px; height:40px; background-size:100% 100%; }
+.music { position:fixed; top:120px; right:40px; background:url(bg/music.gif) no-repeat center center; background-size:70px 70px; width:60px; height:60px; z-index:9999; cursor:pointer;}
+.rotate { background:url(bg/music_off.png) no-repeat 0 0; position:absolute; top:10px; left:10px; width:40px; height:40px; background-size:100% 100%;animation: 1.2s linear 0s normal none infinite running rotating;}
+.musicOff { background:url(bg/music_off.png) no-repeat 0 0; position:absolute; top:10px; left:10px; width:40px; height:40px; background-size:100% 100%; }
 .musicKG { background:none;}
 </style>
 </head>
@@ -140,21 +140,36 @@ img { display:block; border:0;}
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide page01">
-            <div class="block p1 p104"><img src="elem/01/weizi.png" width="540" height="280" alt=""></div>
-            <div class="block p1 p105"><img src="elem/01/laopo.png" width="540" height="120" alt=""></div>
+            <div class="p101">
+                <div class="block p1 p104"></div>
+                <div class="block p1 p104"><img src="elem/01/weizi.png" width="540" height="280" alt=""></div>
+                <div class="block p1 p105"><img src="elem/01/laopo.png" width="540" height="120" alt=""></div>
+            </div>
         </div>
         <!--end swiper-slide -->
         <div class="swiper-slide page02">
-            <div class="block p2 p201"><img src="elem/02/xiangshi.png" width="100" height="45" alt=""></div>
-            <div class="block p2 p202"><img src="elem/02/xiangfeng.png" width="220" height="220" alt=""></div>
-            <div class="block p2 p203"><img src="elem/02/01.jpeg" width="220" height="200" style="border-radius: 20%;" alt=""></div>
-            <div class="block p2 p204"><img src="elem/02/zhuding.png" width="220" height="180" alt=""></div>
+            <div class="logo p2"><img src="elem/02/time.png" width="640" height="104" alt=""></div>
+            <div class="block p2 p201"><img src="elem/02/time.png" width="440" height="90" alt=""></div>
+            <div class="block p2 p202"><img src="elem/02/time.png" width="640" height="56" alt=""></div>
+            <div class="block p2 p203"><img src="elem/02/time.png" width="202" height="42" alt=""></div>
+            <div class="block p2 p204"><img src="elem/02/time.png" width="438" height="42" alt=""></div>
+            <div class="block p2 p205"><img src="elem/02/time.png" width="230" height="48" alt=""></div>
+            <div class="block p2 p206"><img src="elem/02/time.png" width="410" height="48" alt=""></div>
+            <div class="block p2 p207"><img src="elem/02/time.png" width="271" height="49" alt=""></div>
+            <div class="block p2 p208"><img src="elem/02/time.png" width="369" height="49" alt=""></div>
+            <div class="block p2 p209"><img src="elem/02/time.png" width="640" height="84" alt=""></div>
+            <div class="block p2 p210"><img src="elem/02/time.png" width="640" height="518" alt=""></div>
+            <div class="pGo swipeMove"><img src="elem/02/time.png" width="33" height="81" alt=""></div>
         </div>
         <!--end swiper-slide -->
         <div class="swiper-slide page03">
-        	<div class="block p3 p301"><img src="elem/03/0301.jpeg" width="640" height="480" alt=""></div>
-        	<div class="block p3 p302"><img src="elem/03/yuanfen.png" width="300" height="300" alt=""></div>
-            <div class="pGo swipeMove"><img src="elem/03/aixin.png" width="80" height="120" alt=""></div>
+        	<div class="logo p3"><img src="elem/02/time.png" width="640" height="104" alt=""></div>
+        	<div class="block p3 p301"><img src="elem/02/time.png" width="640" height="104" alt=""></div>
+        	<div class="block p3 p302"><img src="elem/02/time.png" width="640" height="341" alt=""></div>
+        	<div class="block p3 p303"><img src="elem/02/time.png" width="72" height="57" alt=""></div>
+        	<div class="block p3 p304"><img src="elem/02/time.png" width="177" height="164" alt=""></div>
+        	<div class="block p3 p305"><img src="elem/02/time.png" width="640" height="121" alt=""></div>
+            <div class="pGo swipeMove"><img src="elem/02/time.png" width="33" height="81" alt=""></div>
         </div>
         <!--end swiper-slide -->
         <div class="swiper-slide page04">
@@ -240,11 +255,8 @@ $(document).ready(function(e) {
 		$(".p104").fadeIn(800,function(){$(".p105").fadeIn(800,function(){$(".p106").fadeIn(800)})});
 	},400);
 	setTimeout(function(){
-		$(".p105").addClass("bounceInRight animated")
+		$(".p105").addClass("fadeInRightBig animated");
 	},500);
-	setTimeout(function(){
-		$(".p105").removeClass("bounceInRight animated").addClass("tada animated");
-	},1000);
 	//alert($(document.body).width()+"++"+$(document.body).height());
   var mySwiper = new Swiper('.swiper-container',{
     mode: 'vertical',
@@ -260,25 +272,44 @@ $(document).ready(function(e) {
 					$(".p202").addClass("fadeInRightBig animated")
 				},1000);
 				setTimeout(function(){
-					$(".p203").addClass("fadeInLeft animated");
-				},1300);
-				setTimeout(function(){
-					$(".p204").addClass("fadeInUp animated")
+					$(".p203").fadeIn();
 				},2000);
+				setTimeout(function(){
+					$(".p204").addClass("bounceInRight animated")
+				},2500);
 				setTimeout(function(){
 					$(".p205").fadeIn();
 				},3500);
+				setTimeout(function(){
+					$(".p206").addClass("bounceInRight animated")
+				},4000);
+				setTimeout(function(){
+					$(".p207").fadeIn();
+				},5000);
+				setTimeout(function(){
+					$(".p208").addClass("bounceInRight animated")
+				},5500);
+				setTimeout(function(){
+					$(".p209").fadeIn();
+				},6500);
+				setTimeout(function(){
+					$(".p210").addClass("zoomInDown animated")
+				},7000);
 				break;
 			case 2:
+				$(".p302").addClass("zoomInRight animated")
+				setTimeout(function(){
+					$(".p303").addClass("fadeInUp animated")
+				},1000);
 				setTimeout(function(){
 					$(".p301").fadeIn();
-				},400);
+				},2000);
 				setTimeout(function(){
-					$(".p302").addClass("zoomInRight animated")
-				},800);
+					$(".p304").addClass("animated").animate({height:"164px"},1000);
+				},3000);
 				setTimeout(function(){
 					$(".p305").addClass("flash animated")
-				},1000);
+				},4000);
 				break;
 			case 3:
 				$(".p401").fadeIn();
