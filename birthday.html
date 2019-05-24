@@ -183,7 +183,7 @@ img { display:block; border:0;}
 	<div class="rotate musicOff"></div>
 </div>
 
-<audio preload="auto" autoplay="autoplay" id="media" src="bg/music.mp3" loop></audio>
+<audio preload="auto" autoplay="autoplay" id="media" src="bg/music1.mp3" loop></audio>
 </html>
 <script type="text/ecmascript">
 $(document).ready(function(e) {
@@ -200,22 +200,22 @@ $(document).ready(function(e) {
 	});
 	setTimeout(function(){
 		$(".p101").addClass("bounceInLeft animated");
-	},100);
-	setTimeout(function(){
-		$(".p102").addClass("bounceInRight animated");
-	},200);
-	setTimeout(function(){
-		$(".p103").addClass("bounceInDown animated");
-	},300);
-	setTimeout(function(){
-		$(".p104").fadeIn(800,function(){$(".p105").fadeIn(800,function(){$(".p106").fadeIn(800)})});
 	},400);
 	setTimeout(function(){
+		$(".p102").addClass("bounceInRight animated");
+	},800);
+	setTimeout(function(){
+		$(".p103").addClass("bounceInDown animated");
+	},1200);
+	setTimeout(function(){
+		$(".p104").fadeIn(800,function(){$(".p105").fadeIn(800,function(){$(".p106").fadeIn(800)})});
+	},1600);
+	setTimeout(function(){
 		$(".p105").addClass("bounceInRight animated")
-	},500);
+	},2000);
 	setTimeout(function(){
 		$(".p105").removeClass("bounceInRight animated").addClass("tada animated");
-	},1000);
+	},2400);
 	//alert($(document.body).width()+"++"+$(document.body).height());
   var mySwiper = new Swiper('.swiper-container',{
     mode: 'vertical',
